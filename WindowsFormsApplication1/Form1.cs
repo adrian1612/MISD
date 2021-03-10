@@ -17,18 +17,7 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
-        List<string> YourDestiny = new List<string>
-        {
-            "Magkaka anak ka ng aso",
-            "Magkaka asawa ka ng baog",
-            "Magiging mayaman ka",
-            "Ikaw ang pagasa ng bayan",
-            "Ikaw lang ang sakalam",
-            "Itigil mo na panunuod ng Porn!",
-            "Magiging boxs ka din", 
-            "Habang may buhay may pag asa",
-            "Ikh4w lhung zsaphuat nhua!"
-        };
+        List<string> YourDestiny = new List<string> { "Magkaka anak ka ng aso", "Magkaka asawa ka ng baog", "Magiging mayaman ka", "Ikaw ang pagasa ng bayan", "Ikaw lang ang sakalam" };
 
         private void button1_Click(object sender, EventArgs e)
         {
