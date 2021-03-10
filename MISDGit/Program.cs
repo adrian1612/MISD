@@ -10,7 +10,7 @@ namespace MISDGit
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello Worldsss");
+            Console.WriteLine("Hello World");
             Console.ReadLine();
         }
     }
