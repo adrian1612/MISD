@@ -10,7 +10,10 @@ namespace MISDGit
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello Worlds");
+            Person p = new Person();
+            p.FillPerson();
+            Console.WriteLine("Name: {0}\nAge: {1}", p.Name, p.Age);
+
             Console.ReadLine();
         }
 
@@ -30,6 +33,14 @@ namespace MISDGit
                 Birthday = _Birthday;
             }
 
+            public void FillPerson()
+            {
+                Console.Write("Enter your name: ");
+                Name = Console.ReadLine();
+                Console.Write("Enter your birthday: ");
+                Birthday = Convert.ToDateTime(Console.ReadLine());
+                Console.Clear();
+            }
 
         }
     }
