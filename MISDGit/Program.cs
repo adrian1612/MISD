@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,10 +11,12 @@ namespace MISDGit
     {
         static void Main(string[] args)
         {
-            Person p = new Person();
-            p.FillPerson();
-            Console.WriteLine("Name: {0}\nAge: {1}", p.Name, p.Age);
+            dbcontrol s = new dbcontrol();
 
+            foreach (DataRow r in s.Query("select * from tbl_sample where id = @id", p => p.Add("@id", 1)).Rows)
+            {
+                Console.WriteLine("Firstname: {0}\nMiddlename: {1}\nLastname: {2}", r[1], r[2], r[3]);
+            }
             Console.ReadLine();
         }
 
