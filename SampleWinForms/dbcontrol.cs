@@ -18,7 +18,7 @@ namespace SampleWinForms
 
     public class dbcontrol : IP
     {
-        SqlConnection cn = new SqlConnection("server=DESKTOP-DNK5REP;database=dbsample;user=sa;pwd=1234");
+        SqlConnection cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='|DataDirectory|dbsample.mdf';Integrated Security=True");
         SqlCommand cm;
         List<SqlParameter> param = new List<SqlParameter>();
 
