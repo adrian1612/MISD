@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MISDGit", "MISDGit\MISDGit.csproj", "{CBCBBEC3-ADFC-43DF-91AC-B73C64F31516}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleWinForms", "SampleWinForms\SampleWinForms.csproj", "{3BC54B67-5A4D-40F1-86FF-A1F57BE16AC0}"
 EndProject
 Global
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CBCBBEC3-ADFC-43DF-91AC-B73C64F31516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CBCBBEC3-ADFC-43DF-91AC-B73C64F31516}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CBCBBEC3-ADFC-43DF-91AC-B73C64F31516}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CBCBBEC3-ADFC-43DF-91AC-B73C64F31516}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3BC54B67-5A4D-40F1-86FF-A1F57BE16AC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3BC54B67-5A4D-40F1-86FF-A1F57BE16AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BC54B67-5A4D-40F1-86FF-A1F57BE16AC0}.Release|Any CPU.ActiveCfg = Release|Any CPU

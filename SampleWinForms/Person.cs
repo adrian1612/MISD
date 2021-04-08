@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace SampleWinForms
 {
-    public class Person
+
+    public class Person : IPerson
     {
         dbcontrol s = new dbcontrol();
 
@@ -39,6 +40,7 @@ namespace SampleWinForms
             this.mn = mn;
             this.lname = lname;
         }
+
         public Person(string fname, string mn, string lname)
         {
             this.fname = fname;

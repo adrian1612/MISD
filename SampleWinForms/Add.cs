@@ -21,6 +21,7 @@ namespace SampleWinForms
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Hide();
             var dialog = MessageBox.Show("Confirm Add person", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialog == DialogResult.Yes)
             {

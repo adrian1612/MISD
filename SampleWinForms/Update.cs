@@ -16,17 +16,13 @@ namespace SampleWinForms
         public event EventHandler Updated;
         public Update(int ID)
         {
-            InitializeComponent();
-
             p = p.FindPerson(ID);
-            textBox1.Text = p.fname;
-            textBox2.Text = p.mn;
-            textBox3.Text = p.lname;
-            textBox4.Text = p.ID.ToString();
+            InitializeComponent(p.ID, p.fname, p.mn, p.lname);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Hide();
             var dialog = MessageBox.Show("Are you sure you want to update?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialog == DialogResult.Yes)
             {

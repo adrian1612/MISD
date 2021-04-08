@@ -7,7 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 namespace SampleWinForms
 {
-    public class P : Dictionary<string,object>
+    public class P : Dictionary<string, object>
     {
         public int RecordCount { get; set; }
         public string Exception { get; set; }
@@ -15,11 +15,46 @@ namespace SampleWinForms
         public SqlDataAdapter da { get; set; }
         public DataTable dt { get; set; }
     }
-    public class dbcontrol : P
+
+    public class dbcontrol : IP
     {
         SqlConnection cn = new SqlConnection("server=DESKTOP-DNK5REP;database=dbsample;user=sa;pwd=1234");
         SqlCommand cm;
         List<SqlParameter> param = new List<SqlParameter>();
+
+        public SqlDataAdapter da
+        {
+            get;
+
+            set;
+        }
+
+        public DataTable dt
+        {
+            get;
+
+            set;
+        }
+
+        public string Exception
+        {
+            get;
+
+            set;
+        }
+
+        public bool HasException
+        {
+            get { return !string.IsNullOrEmpty(Exception); }
+        }
+
+        public int RecordCount
+        {
+            get;
+
+            set;
+        }
+
         void q(string _query, CommandType _type)
         {
             RecordCount = 0;
@@ -43,7 +78,12 @@ namespace SampleWinForms
                 if (cn.State == ConnectionState.Open)
                 {
                     cn.Close();
+                    if (HasException)
+                    {
+                        System.Windows.Forms.MessageBox.Show(Exception);
+                    }
                 }
+
             }
         }
 

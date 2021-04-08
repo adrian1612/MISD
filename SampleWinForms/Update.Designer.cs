@@ -26,7 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        private void InitializeComponent(int ID, string fname, string mn, string lname)
         {
             this.button1 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -55,6 +55,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(124, 20);
             this.textBox3.TabIndex = 12;
+            this.textBox3.Text = lname ;
             // 
             // label3
             // 
@@ -71,6 +72,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(124, 20);
             this.textBox2.TabIndex = 10;
+            this.textBox2.Text = mn;
             // 
             // label2
             // 
@@ -87,6 +89,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(124, 20);
             this.textBox1.TabIndex = 8;
+            this.textBox1.Text = fname;
             // 
             // label1
             // 
@@ -104,6 +107,7 @@
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(124, 20);
             this.textBox4.TabIndex = 15;
+            this.textBox4.Text = ID.ToString();
             // 
             // label4
             // 
