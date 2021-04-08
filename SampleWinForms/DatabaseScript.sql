@@ -6,4 +6,5 @@ CREATE TABLE [dbo].[tbl_sample] (
     [fname] VARCHAR (50) NULL,
     [mn]    VARCHAR (50) NULL,
     [lname] VARCHAR (50) NULL
-);
+)
+GO
